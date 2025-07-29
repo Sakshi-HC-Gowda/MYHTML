@@ -1,0 +1,172 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out the survey form below to help us improve our services.</p>
+
+  <form id="survey-form">
+    <!-- Name Field -->
+    <label id="name-label" for="name">Your Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    <br></br>
+    <!-- Email Field -->
+    <label id="email-label" for="email">Your Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+<br></br>
+    <!-- Number Field -->
+    <label id="number-label" for="number">Age:</label>
+    <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max="100" required>
+<br></br>
+    <!-- Dropdown Select -->
+    <label for="dropdown">Choose your country:</label>
+    <select id="dropdown" name="country">
+      <option value="us">United States</option>
+      <option value="ca">Canada</option>
+    </select>
+
+    <!-- Radio Buttons -->
+    <fieldset>
+      <legend>Gender:</legend>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+    </fieldset>
+
+    <!-- Checkboxes -->
+    <fieldset>
+      <legend>Choose your interests:</legend>
+      <input type="checkbox" id="sports" name="interest" value="sports">
+      <label for="sports">Sports</label>
+      <input type="checkbox" id="music" name="interest" value="music">
+      <label for="music">Music</label>
+    </fieldset>
+
+    <!-- Textarea for comments -->
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+
+    <!-- Submit Button -->
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p#description {
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+#survey-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+label {
+  font-size: 1.1em;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select, textarea {
+  background-color: #f9f9f9;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="radio"]:checked, input[type="checkbox"]:checked {
+  background-color: #007bff;
+}
+
+@media screen and (max-width: 768px) {
+  #survey-form {
+    width: 90%;
+  }
+}
+
+
+** end of undefined **
+
